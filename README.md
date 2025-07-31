@@ -1,7 +1,3 @@
-Here is a cleaned-up and professionally formatted version of your README. It maintains all technical accuracy while improving clarity, consistency, and structure:
-
----
-
 # UMP, SHIP & SLAP Data Recovery
 
 This project provides tools for recovering and broadcasting Bitcoin transaction data associated with three overlay protocols in the BSV ecosystem:
