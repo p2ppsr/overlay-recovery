@@ -1,0 +1,27 @@
+{
+  "name": "ump-ship-slap-recovery",
+  "version": "1.0.0",
+  "description": "Tools for recovering and broadcasting UMP, SHIP and SLAP data via the BSV overlay network.",
+  "main": "dist/dataRecovery.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepare:ump": "ts-node src/dataRecovery.ts ump --prepare",
+    "prepare:ship": "ts-node src/dataRecovery.ts ship --prepare",
+    "prepare:slap": "ts-node src/dataRecovery.ts slap --prepare",
+    "broadcast:ump": "ts-node src/dataRecovery.ts ump --broadcast",
+    "broadcast:ship": "ts-node src/dataRecovery.ts ship --broadcast",
+    "broadcast:slap": "ts-node src/dataRecovery.ts slap --broadcast"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@bsv/sdk": "^1.6.20",
+    "@bsv/wallet-toolbox-client": "^1.5.20",
+    "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.0"
+  }
+}
